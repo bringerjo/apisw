@@ -1,0 +1,70 @@
+body {
+	background-image: url('../images/bg2.jpg');
+	background-repeat: cover;
+	color: #e1a907;
+	font-family: 'Old Standard TT', serif;
+	background-attachment: fixed;
+}
+
+header p {
+	margin: 0.5em auto;
+	font-size: 72px;
+	text-align: center;
+}
+
+header hr {
+	margin: auto;
+	margin-left: 25%;
+	margin-right: 25%;
+	width: 50%;
+	border: 1px solid #e1a907;
+}
+
+.recherche {
+	margin: 0.5em auto;
+	text-align: center;
+	color: white;
+	font-size: 26px;
+	font-weight: bold;
+}
+
+.btn--recherche {
+	border: none;
+	border-radius: 10%;
+}
+
+.btn--recherche:hover {
+	background-color: #e1a907;
+	color: white;
+}
+
+.resultats--top, .resultats--bottom {
+	display: flex;
+	justify-content: center;
+}
+
+.hidden--gen, .hidden--home, .hidden--species, .hidden--vehicles {
+	height: 25em;
+	border: 1px solid #e1a907;
+	width: 25em;
+	margin: 0.5em;
+	color: rgba(225, 169, 7, 1);
+	font-weight: bold;
+	text-align: center;
+	background-color: white;
+	font-size: 18px;
+	opacity: 0.8;
+}
+
+footer p {
+	margin: 0.5em auto;
+	text-align: center;
+}
+
+footer hr {
+	margin: auto;
+	margin-left: 25%;
+	margin-right: 25%;
+	width: 50%;
+	border: 1px solid #e1a907;
+}

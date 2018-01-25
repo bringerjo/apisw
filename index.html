@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+	<title>api star wars</title>
+	<link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Old+Standard+TT" rel="stylesheet"> 
+</head>
+<body>
+	<header>
+		<p>API Star Wars</p>
+		<hr>
+	</header>
+	<div class="recherche">
+		<p>Votre recherche</p>
+		<input class="ipt--recherche" type="text" value="">
+		<button class="btn--recherche">Valider</button>
+	</div>
+	<div class="resultats--top">
+		<div class="hidden--gen" style="overflow:scroll;">
+			<p>Informations générale</p>
+			<script id="template--gen" type="x-tmpl-mustache">
+				{{#results}}
+					Nom: {{name}}<br/>
+					Age: {{birth_year}}<br/>
+					Couleur des yeux: {{eye_color}}<br/>
+					Sex: {{gender}}<br/>
+					Couleur de cheveux: {{hair_color}}<br/>
+					Taille: {{height}}<br/>
+					Poids: {{mass}}<br/>
+					Couleur de peau: {{skin_color}}<br/>
+					<br/>
+				{{/results}}
+			</script>
+		</div>
+		<div class="hidden--home" style="overflow:scroll;">
+			<p>Monde d'origine</p>
+			<script id="template--home" type="x-tmpl-mustache">
+			{{#homeworld}}
+				Nom: {{name}}<br/>
+				Diamètre: {{diameter}}<br/>
+				Gravité: {{gravity}}<br/>
+				Population: {{population}}<br/>
+				Climat: {{climate}}<br/>
+				Relief: {{terrain}}<br/>
+				Pourcentage eau: {{surface_water}}<br/>
+				<br/>
+			{{/homeworld}}
+			</script>
+		</div>
+	</div>
+	<div class="resultats--bottom">
+		<div class="hidden--species" style="overflow:scroll;">
+			<p>Espèce</p>
+			<script id="template--species" type="x-tmpl-mustache">
+			{{#spec}}
+				Nom: {{name}}<br/>
+				Classification: {{classification}}<br/>
+				Désignation: {{designation}}<br/>
+				Taille moyenne: {{average_height}}<br/>
+				Espérance de vie: {{average_lifespan}}<br/>
+				Language: {{language}}<br/>
+				<br/>
+			{{/spec}}
+			</script>
+		</div>
+		<div class="hidden--vehicles" style="overflow:scroll;">
+			<p>Véhicules</p>
+			<script id="template--vehicles" type="x-tmpl-mustache">
+			{{#vehicle}}
+				Nom: {{name}}<br/>
+				Modèle: {{model}}<br/>
+				Fabricant: {{manufacturer}}<br/>
+				Longueur: {{length}}<br/>
+				Prix: {{cost_in_credits}}<br/>
+				Equipage: {{crew}}<br/>
+				Passagers: {{passengers}}<br/>
+				Capacité stockage: {{cargo_capacity}}<br/>
+				Capacité trajet: {{consumables}}<br/>
+				<br/>
+			{{/vehicle}}
+			</script>
+		</div>
+	</div>
+	<footer>
+		<hr>
+		<p>Copy by jo</p>
+	</footer>
+	<script type="text/javascript" src="node_modules/jquery/dist/jquery.js"></script>
+	<script type="text/javascript" src="node_modules/mustache/mustache.js"></script>
+	<script type="text/javascript" src="js/app.js"></script>
+</body>
+</html>
