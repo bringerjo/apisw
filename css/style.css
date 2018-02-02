@@ -44,9 +44,9 @@ header hr {
 }
 
 .hidden--gen, .hidden--home, .hidden--species, .hidden--vehicles {
-	height: 25em;
+	height: 17em;
 	border: 1px solid #e1a907;
-	width: 25em;
+	width: 22em;
 	margin: 0.5em;
 	color: rgba(225, 169, 7, 1);
 	font-weight: bold;
